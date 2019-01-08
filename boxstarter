@@ -4,11 +4,51 @@ Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtec
 
 Update-ExecutionPolicy Unrestricted
 
-#cinst -y Microsoft-Hyper-V-All -source windowsFeatures
-
-# Packages
-#cinst -y hyper
-cinst cmder
-
 #Enable your PowerShell to execute scripts
 Set-ExecutionPolicy Unrestricted -Scope CurrentUser
+
+# Restart PowerShell / CMDer before moving on - or run
+$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+
+# Packages
+cinst cmder
+cinst conemu
+
+## Git
+cinst -y git.install
+cinst -y poshgit
+
+# Restart PowerShell / CMDer before moving on - or run
+$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+
+cinst Git-Credential-Manager-for-Windows
+cinst github
+
+## Node, npm
+cinst -y nodejs.install
+npm install -g npm-windows-upgrade
+
+## Editors
+cinst -y visualstudiocode
+
+## Java
+cinst jdk8
+choco install maven
+choco install gradle
+
+## Python
+cinst python2
+cinst pip
+cinst easy.install
+
+if (Test-PendingReboot) { Invoke-Reboot }
+
+## Basics
+cinst vlc
+cinst GoogleChrome
+cinst 7zip.install
+cinst sysinternals
+cinst DotNet3.5
+
+# Let's get Updates, too
+Install-WindowsUpdate -acceptEula
