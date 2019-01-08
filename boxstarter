@@ -3,10 +3,10 @@ Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtec
 
 Update-ExecutionPolicy Unrestricted
 
-cinst -y Microsoft-Hyper-V-All -source windowsFeatures
+#cinst -y Microsoft-Hyper-V-All -source windowsFeatures
 
 # Packages
-cinst -y hyper
+#cinst -y hyper
 
 ## Git
 cinst -y git.install
@@ -26,12 +26,12 @@ npm install -g npm-windows-upgrade
 cinst -y visualstudiocode
 
 ## Visual Studio 2017
-cinst -y visualstudio2017community
-if (Test-PendingReboot) { Invoke-Reboot }
+##cinst -y visualstudio2017community
+##if (Test-PendingReboot) { Invoke-Reboot }
 
 ## Ruby, Go, Python
-cinst -y ruby
-cinst -y ruby.devkit
+##cinst -y ruby
+##cinst -y ruby.devkit
 
 cinst -y python2
 
