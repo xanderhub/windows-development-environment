@@ -43,7 +43,6 @@ choco install gradle
 ## Python
 cinst python2
 cinst pip
-cinst easy.install
 
 if (Test-PendingReboot) { Invoke-Reboot }
 
