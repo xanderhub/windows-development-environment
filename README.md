@@ -13,7 +13,7 @@ A fresh Windows isn't entirely ready for modern development, but all the tools y
 Below, you can see the all the things I need to actually go and work on stuff. An opiniated version of the list below can be installed automatically thanks to the magic of [Boxstarter](http://boxstarter.org/). [Check out the script to see what it runs](https://github.com/felixrieseberg/windows-development-environment/blob/master/boxstarter). It's a trimmed down version of all the tools below, leaving out duplicate tools. As an example, it installs VS Code (and not Atom or Sublime) and Git (but not Subversion or Mercurial). Simply start PowerShell as Administrator and run:
 
 ```powershell
-START http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/felixrieseberg/windows-development-environment/master/boxstarter
+START http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/xanderhub/windows-development-environment/master/boxstarter
 ```
 
 ## The Goods
