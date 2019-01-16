@@ -49,6 +49,7 @@ cinst vlc
 # cinst 7zip.install
 cinst sysinternals
 cinst DotNet3.5
+cinst ditto
 
 # Let's get Updates, too
 Install-WindowsUpdate -acceptEula
