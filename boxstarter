@@ -45,8 +45,8 @@ if (Test-PendingReboot) { Invoke-Reboot }
 
 ## Basics
 cinst vlc
-cinst GoogleChrome
-cinst 7zip.install
+# cinst GoogleChrome
+# cinst 7zip.install
 cinst sysinternals
 cinst DotNet3.5
 
