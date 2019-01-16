@@ -8,24 +8,28 @@ Update-ExecutionPolicy Unrestricted
 #Set-ExecutionPolicy Unrestricted -Scope CurrentUser
 
 # Restart PowerShell / CMDer before moving on - or run
-$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+#$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
 
 # Packages
-cinst cmder
-cinst conemu
+#cinst cmder
+#cinst conemu
 
 ## Git
-cinst -y git.install
-cinst -y poshgit
+#cinst -y git.install
+#cinst -y poshgit
 
 # Restart PowerShell / CMDer before moving on - or run
-$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+#$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
 
-cinst Git-Credential-Manager-for-Windows
-cinst github
+#cinst Git-Credential-Manager-for-Windows
+#cinst github
 
 ## Node, npm
-cinst -y nodejs.install
+#cinst -y nodejs.install
+
+# Restart PowerShell / CMDer before moving on - or run
+#$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+
 npm install -g npm-windows-upgrade
 
 ## Editors
