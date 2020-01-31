@@ -15,7 +15,7 @@ cinst cmder
 cinst conemu
 
 ## Git
-cinst -y git.install
+# cinst -y git.install
 cinst -y poshgit
 
 # Restart PowerShell / CMDer before moving on - or run
@@ -33,10 +33,10 @@ $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";"
 npm install -g npm-windows-upgrade
 
 ## Editors
-cinst -y visualstudiocode
+# cinst -y visualstudiocode
 
 ## Java
-cinst jdk8
+# cinst jdk8
 choco install maven
 choco install gradle
 
@@ -47,12 +47,12 @@ cinst pip
 if (Test-PendingReboot) { Invoke-Reboot }
 
 ## Basics
-cinst GoogleChrome
-cinst 7zip.install
+# cinst GoogleChrome
+# cinst 7zip.install
 cinst sysinternals
-cinst DotNet3.5
-cinst ditto
+# cinst DotNet3.5
+# cinst ditto
 cinst everything
 
 # Let's get Updates, too
-Install-WindowsUpdate -acceptEula
+# Install-WindowsUpdate -acceptEula
